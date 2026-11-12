@@ -1,0 +1,536 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+
+/* PREMIUM AZMIRA NAVBAR */
+
+
+/* AZMIRA PREMIUM THEME */
+
+:root {
+    --azmira-green: #073B32;
+    --azmira-gold: #D6AD60;
+    --azmira-cream: #F8F5ED;
+}
+
+.azmira-navbar {
+    background: var(--azmira-green);
+    padding: 15px 0;
+    border-bottom: 2px solid var(--azmira-gold);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.azmira-navbar .navbar-brand img {
+    width: 185px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.azmira-navbar .nav-link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 12px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.azmira-navbar .nav-link:hover,
+.azmira-navbar .nav-link.active {
+    color: var(--azmira-gold);
+}
+
+.azmira-navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--azmira-gold);
+    transition: 0.3s;
+}
+
+.azmira-navbar .nav-link:hover::after,
+.azmira-navbar .nav-link.active::after {
+    width: 100%;
+}
+
+.nav-contact-btn {
+    background: var(--azmira-gold);
+    color: var(--azmira-green);
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-contact-btn:hover {
+    background: var(--azmira-cream);
+    color: var(--azmira-green);
+    transform: translateY(-2px);
+}
+
+.azmira-navbar .navbar-toggler {
+    border: 1px solid var(--azmira-gold);
+}
+
+.azmira-navbar .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 991px) {
+    .azmira-navbar .navbar-nav {
+        padding: 15px 0;
+    }
+
+    .azmira-navbar .nav-link {
+        margin: 8px 0;
+    }
+
+    .nav-contact-btn {
+        display: inline-block;
+        margin: 10px 0;
+    }
+}
+
+
+
+.contact-btn:hover {
+    background-color: #b58b50;
+    color: white;
+}
+
+.hero {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.35),
+    rgba(0,0,0,0.35)),
+    url("Images/hero.jpg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.explore-btn {
+    background-color: #b58b50;
+    color: white;
+    padding: 13px 28px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.explore-btn:hover {
+    background-color: white;
+    color: #183b35;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+}
+
+.destinations {
+    background-color: #f8f7f3;
+    text-align: center;
+}
+
+.destinations h2 {
+    color: #183b35;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.destination-card {
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.destination-card h4 {
+    margin-top: 18px;
+    color: #183b35;
+}
+
+.destination-card p {
+    color: #666;
+    padding: 0 10px;
+}
+
+.about-section {
+    background-color: #ffffff;
+}
+
+.about-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-section h2 {
+    color: #183b35;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.about-section h5 {
+    color: #b58b50;
+    margin: 18px 0;
+}
+
+.about-section p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.about-btn {
+    background-color: #183b35;
+    color: white;
+    padding: 12px 25px;
+}
+
+.about-btn:hover {
+    background-color: #b58b50;
+    color: white;
+}
+
+.packages-section {
+    background-color: #f8f7f3;
+}
+
+.packages-section h2 {
+    color: #183b35;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    transition: 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+}
+
+.package-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.package-info {
+    padding: 22px;
+}
+
+.package-info h4 {
+    color: #183b35;
+}
+
+.package-info h5 {
+    color: #b58b50;
+    margin: 15px 0;
+}
+
+.package-btn {
+    background-color: #183b35;
+    color: white;
+    padding: 10px 22px;
+}
+
+.package-btn:hover {
+    background-color: #b58b50;
+    color: white;
+}
+
+/* WHY CHOOSE AZMIRA */
+
+.why-choose-section {
+    padding: 80px 0;
+    background-color: #f8f9f6;
+}
+
+.why-heading {
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.why-heading span {
+    color: #b58b50;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.why-heading h2 {
+    color: #183b35;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.why-heading p {
+    color: #777;
+    line-height: 1.7;
+}
+
+.feature-box {
+    background: white;
+    padding: 40px 25px;
+    text-align: center;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.10);
+}
+
+.feature-box i {
+    font-size: 42px;
+    color: #b58b50;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.feature-box h4 {
+    color: #183b35;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+    .why-choose-section {
+        padding: 55px 0;
+    }
+
+    .why-heading h2 {
+        font-size: 28px;
+    }
+}
+
+/* CUSTOMER TESTIMONIALS */
+
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.testimonial-heading {
+    margin-bottom: 50px;
+}
+
+.testimonial-heading span {
+    color: #b58b50;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.testimonial-heading h2 {
+    color: #183b35;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.testimonial-heading p {
+    color: #777;
+}
+
+.testimonial-card {
+    background-color: #f8f9f6;
+    padding: 35px 25px;
+    border-radius: 10px;
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.stars {
+    color: #b58b50;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.testimonial-card h5 {
+    color: #183b35;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.testimonial-card small {
+    color: #b58b50;
+}
+
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 55px 0;
+    }
+
+    .testimonial-heading h2 {
+        font-size: 28px;
+    }
+}
+
+/* AZMIRA FOOTER */
+
+.azmira-footer {
+    background-color: #183b35;
+    color: #ffffff;
+    padding: 65px 0 20px;
+}
+
+.azmira-footer h5 {
+    color: #b58b50;
+    font-size: 19px;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+.footer-logo {
+    color: #b58b50;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.azmira-footer p {
+    color: #d2d8d5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #d2d8d5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #b58b50;
+    padding-left: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    background-color: #28564e;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #b58b50;
+    color: #183b35;
+}
+
+.azmira-footer hr {
+    border-color: #71847e;
+    margin-top: 40px;
+}
+
+.copyright p {
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .azmira-footer {
+        padding: 45px 0 20px;
+    }
+}
